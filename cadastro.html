@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Eficaz</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/eficaz.css">
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+      <a class="navbar-brand" href="index.html"><img src="imagem/eficaz_logo_black.png" class="img-fluid"></a>
+  </div>
+  
+  <div id="menu">
+      <div class="row">
+        <div class="col-12">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link" href="cadastro.html" >Cadastro</a>
+          </div>
+      </div>
+          <div class="col-12">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link" href="listacadastrado.html" >Lista de cadastrados</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="content">
+      <div class="card">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+               <h3 class="card-title">Cadastro</h3>
+              </figure>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="table-responsive table-space">
+                            <table class="table table-hover" id="table-lista-cadastrados">
+                                <thead>
+                                    <div class="container">
+                                      <form class="row g-3 needs-validation" novalidate>
+                                        <div class="row">
+                                            <div class="col-6">
+                                              <label for="E-mailCand" class="form-label">E-mail pessoal do candidato</label>
+                                              <input type="text" id="E-mailCand" class="form-control" aria-label="E-mailCand" required>
+                                              <div class="invalid-feedback">
+                                                Insira um E-mail pessoal válido!
+                                              </div>
+                                            </div>
+                                            
+                                          <div class="col-6">
+                                            <label for="NomeC" class="form-label">Nome completo</label>
+                                            <input type="text" id="NomeC" class="form-control" aria-label="Nome completo" required>
+                                            <div class="invalid-feedback">
+                                              Insira o nome completo válido!
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </form>
+                                        <div class="row">
+                                          <div class="col-6 ">
+                                            <label for="E-mail" class="form-label">E-mail</label>
+                                            <input type="text" id="E-mail" class="form-control" aria-label="E-mail" required>
+                                            <div class="invalid-feedback">
+                                              Insira um E-mail válido!
+                                            </div>
+                                          </div>
+                                          <div class="col-6">
+                                            <label for="Telefone" class="form-label">Telefone</label>
+                                            <input type="text" id="Telefone" class="form-control" aria-label="Telefone" required>
+                                            <div class="invalid-feedback">
+                                              Insira um Telefone válido!
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col-6">
+                                            <label for="Rua" class="form-label">Rua</label>
+                                            <input type="text" id="Rua" class="form-control" aria-label="Rua" required>
+                                            <div class="invalid-feedback">
+                                              Insira uma Rua válida!
+                                            </div>
+                                          </div>
+                                          <div class="col-6">
+                                            <label for="N°" class="form-label">N°</label>
+                                            <input type="text" id-="N°" class="form-control" aria-label="N°" required>
+                                            <div class="invalid-feedback">
+                                              Insira um N° válido!
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col-6">
+                                            <label for="Complemento" class="form-label">Complemento</label>
+                                            <input type="text" id="Complemento" class="form-control" aria-label="Complemento"required>
+                                            <div class="invalid-feedback">
+                                              Insira um complemento válido!
+                                            </div>
+                                          </div>
+                                          <div class="col-6">
+                                            <label for="Bairro" class="form-label">Bairro</label>
+                                            <input type="text" id="Bairro" class="form-control" aria-label="Bairro" required>
+                                            <div class="invalid-feedback">
+                                              Insira um Bairro válido!
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col-6">
+                                            <label for="CEP" class="form-label">CEP</label>
+                                            <input type="text" id="CEP" class="form-control" aria-label="CEP" required>
+                                            <div class="invalid-feedback">
+                                              Insira um CEP válido!
+                                            </div>
+                                          </div>
+                                          <div class="col-4">
+                                            <label for="Cidade" class="form-label">Cidade</label>
+                                            <input type="text" id="Cidade" class="form-control" aria-label="Cidade" required>
+                                            <div class="invalid-feedback">
+                                              Insira uma Cidade válida!
+                                            </div>
+                                          </div>
+                                          <div class="col-2">
+                                            <label for="UF" class="form-label">UF</label>
+                                            <input type="text" id="UF" class="form-control" aria-label="UF" required>
+                                            <div class="invalid-feedback">
+                                              Insira um UF válido!
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="d-grid gap-6 d-md-flex justify-content-md-end">                                      
+                                          <button class="btn btn-success btn-lg" type="submit">Cadastrar</button>
+                                        </div>  
+                                      </form>
+                                  </div>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+
+
+</html>
